@@ -1,0 +1,73 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .banner {
+    width: 100%;
+    display: block;
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .sessao {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .sessao a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #003366;
+  }
+  
+  .sessao a:hover {
+    text-decoration: underline;
+  }
+  
+  .pergunta {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 15px;
+    font-size: 20px;
+    text-align: left;
+  }
+  
+  .resposta {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 90vw;            /* até 90% da largura da tela */
+    max-height: 80vh;           /* até 80% da altura da tela */
+    width: auto;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #000;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    transition: all 0.3s ease;
+    opacity: 0;
+    text-align: justify;
+    overflow-y: auto;           /* adiciona rolagem vertical, se necessário */
+  }
+  
+  .resposta.ativa {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+  
